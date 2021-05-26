@@ -1,15 +1,15 @@
 const BM = (props) => {
 
-    const {bm} = props;
-    console.log(bm);
+    const {person} = props;
+    console.log(person);
 
     return (
         <>
-            <td>{bm.id}</td>
-            <td>{bm.name}</td>
-            <td>{bm.type1}</td>
-            <td>{bm.type2}</td>
-            <td>{bm.edible}</td>
+            <td>{person.id}</td>
+            <td>{person.name}</td>
+            <td>{person.type1}</td>
+            <td>{person.type2}</td>
+            <td>{person.edible}</td>
         </>
     )
 

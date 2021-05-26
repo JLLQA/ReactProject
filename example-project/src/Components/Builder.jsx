@@ -18,7 +18,7 @@ const Builder = () => {
                 .then((response) => {
                     console.log(response);
                     setIsLoaded(true);
-                    setData(response.data.data);
+                    setData(response.data);
                 })
                 .catch((error) => {
                     setError(error);
@@ -58,7 +58,7 @@ const Builder = () => {
                         <tbody>
                             {data.map((emp) => (
                                 <tr>
-                                    <BM bm={emp} />
+                                    <BM person={emp} />
                                 </tr>
                             ))}
                         </tbody>
