@@ -30,6 +30,26 @@
   flex-direction: row;
 }
 
+.header1 {
+  padding: 10px;
+  text-align: center;
+  color: yellow;
+  text-shadow: -1px -1px 0 darkblue, 1px -1px darkblue, -1px 1px darkblue, 1px 1px darkblue;
+  font-style: oblique;
+  font-size: 60px;
+  font-family: "Copperplate", fantasy;
+}
+
+.header2 {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  text-shadow: -1px -1px 0 rgb(176, 176, 197), 1px -1px darkblue, -1px 1px darkblue, 1px 1px darkblue;
+  font-style: oblique;
+  font-size: 40px;
+  font-family: "Copperplate", fantasy;
+}
+
 .button {
   display: flex;
   padding-left: 20%;

@@ -1,8 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
 
-// import BM from "./BM";
-
 import { Container } from 'reactstrap';
 
 const Delete = () => {
@@ -36,7 +34,7 @@ const Delete = () => {
     return (
         <>
             <Container>
-                <h1>Delete BM</h1>
+                <h1 className = "header1">Delete BM</h1>
                 <form onSubmit={DeleteBM}>
                     <div>
                         <input

@@ -46,7 +46,7 @@ const Read = () => {
         return (
             <>
                 <Container>
-                    <h1>Current BoorgerMon</h1>
+                    <h1 className = "header2">Current BoorgerMon</h1>
                     <Table striped>
                         <thead>
                             <tr>

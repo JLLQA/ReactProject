@@ -11,7 +11,6 @@ const App = () => {
     <div>
       <div class="navbar">
         <a href="/">Home</a>
-        <a href="/">Create</a>
       </div>
       <div className='rowC'>
         <Create />
