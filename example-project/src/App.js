@@ -1,24 +1,12 @@
 
-import Create from './Components/Create';
-import Read from './Components/Read';
-import Update from './Components/Update';
-import Delete from './Components/Delete';
+
+import Main from './Components/Main'
 import './App.css';
 
 
 const App = () => {
   return (
-    <div>
-      <div className = "navbar">
-        <a href="/">Home</a>
-      </div>
-      <div className = "rowC">
-        <Create />
-        <Delete />
-        <Update />
-      </div>
-      <Read />
-    </div>
+    <Main />
   );
 }
 

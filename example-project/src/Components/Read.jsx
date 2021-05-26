@@ -45,16 +45,16 @@ const Read = () => {
 
         return (
             <>
-                <Container>
+                <Container className = "READ">
                     <h1 className = "header2">Current BoorgerMon</h1>
                     <Table striped>
                         <thead>
                             <tr>
-                                <th>id</th>
-                                <th>name</th>
-                                <th>type1</th>
-                                <th>typ2</th>
-                                <th>edible</th>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Item 1</th>
+                                <th>Item 2</th>
+                                <th>Edible???</th>
                             </tr>
                         </thead>
                         <tbody>

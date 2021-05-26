@@ -34,13 +34,22 @@ form{
   text-align: center;
 }
 
+.headermain {
+  padding: 10px;
+  text-align: center;
+  color: #12B00B;
+  text-shadow: -1px -1px 0 #C6FC28, 1px -1px #C6FC28, -1px 1px #C6FC28, 1px 1px #C6FC28;
+  font-size: 40px;
+  background: #b00b69;
+  font-family: "Copperplate", fantasy;
+}
+
 .header1 {
   padding: 10px;
   text-align: center;
   color: yellow;
   text-shadow: -1px -1px 0 darkblue, 1px -1px darkblue, -1px 1px darkblue, 1px 1px darkblue;
   font-style: oblique;
-  font-size: 60px;
   font-family: "Copperplate", fantasy;
 }
 
@@ -48,7 +57,7 @@ form{
   padding: 10px;
   text-align: center;
   color: white;
-  text-shadow: -1px -1px 0 rgb(176, 176, 197), 1px -1px darkblue, -1px 1px darkblue, 1px 1px darkblue;
+  text-shadow: -1px -1px 0 darkblue, 1px -1px darkblue, -1px 1px darkblue, 1px 1px darkblue;
   font-style: oblique;
   font-size: 40px;
   font-family: "Copperplate", fantasy;

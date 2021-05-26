@@ -33,7 +33,7 @@ const Delete = () => {
 
     return (
         <>
-            <Container>
+            <Container className = "DELETE">
                 <h1 className="header1">Delete BM</h1>
                 <form onSubmit={DeleteBM}>
                     <div>
