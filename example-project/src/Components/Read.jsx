@@ -4,7 +4,7 @@ import BM from "./BM";
 
 import { Table, Container, Spinner } from 'reactstrap';
 
-const Builder = () => {
+const Read = () => {
     const [data, setData] = useState([]);
     const [isLoaded, setIsLoaded] = useState(false)
     const [error, setError] = useState(null)
@@ -25,7 +25,7 @@ const Builder = () => {
                     setIsLoaded(true);
                     console.error(error);
                 });
-        }, 3000)
+        }, 2000)
     }, []);
 
 
@@ -34,9 +34,11 @@ const Builder = () => {
     } else if (!isLoaded) {
         return (
             <>
-                <p>Please wait loading data....</p>
-                <br></br>
-                <Spinner color="danger" />
+                <Container className = "loading">
+                    <p>Please wait loading data....</p>
+                    <br></br>
+                    <Spinner color="danger" />
+                </Container>
             </>
         )
     } else {
@@ -44,7 +46,7 @@ const Builder = () => {
         return (
             <>
                 <Container>
-                    <h1>Welcome to BoorgerMon</h1>
+                    <h1>Current BoorgerMon</h1>
                     <Table striped>
                         <thead>
                             <tr>
@@ -58,7 +60,7 @@ const Builder = () => {
                         <tbody>
                             {data.map((emp) => (
                                 <tr>
-                                    <BM person={emp} />
+                                    <BM bm={emp} />
                                 </tr>
                             ))}
                         </tbody>
@@ -69,4 +71,4 @@ const Builder = () => {
     };
 }
 
-export default Builder;
+export default Read;

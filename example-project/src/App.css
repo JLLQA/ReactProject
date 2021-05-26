@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  padding: 14px 20px;
+  color: black;
+}
+
+.rowC {
+  display: flex;
+  flex-direction: row;
+}
+
+.loading {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  display: flex;
+  padding-left: 20%;
+  height: 50px;
+  justify-content: space-around;
+}
+
+.danger {
+  color: white;
+  background-color: darkred;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.success {
+  color: white;
+  background-color: darkgreen;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
