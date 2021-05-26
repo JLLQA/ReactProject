@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Container } from 'reactstrap';
 
@@ -9,6 +9,7 @@ const Delete = () => {
     const [error, setError] = useState(null)
 
     const DeleteBM = (e) => {
+
         e.preventDefault();
         const DELETE = ID;
         console.log(DELETE);
@@ -21,20 +22,19 @@ const Delete = () => {
                 .delete(delURL)
                 .then((response) => {
                     console.log(response);
+                    window.location.reload(true);
                 })
                 .catch((error) => {
                     setError(error);
                     console.error(error.response);
                 });
         }, 1000)
-
-        setID("");
     }
 
     return (
         <>
             <Container>
-                <h1 className = "header1">Delete BM</h1>
+                <h1 className="header1">Delete BM</h1>
                 <form onSubmit={DeleteBM}>
                     <div>
                         <input

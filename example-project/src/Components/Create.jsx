@@ -10,7 +10,7 @@ const Create = () => {
     return (
         <>
             <Container>
-                <h1>Create BM WIP</h1>
+                <h1 className = "header1">Create BM WIP</h1>
                 <form>
                     <div>
                         <input type="text" class="form-control" id="Name" placeholder="Enter Name: " />
@@ -42,11 +42,12 @@ const Create = () => {
                             <option value="No">No</option>
                         </select>
                     </div>
-                </form>
-                <div className="button">
+                    <br></br>
+                    <div className="button">
                     {/* <button class="success" id="create" onClick={createBM()}> Create BM</button> */}
                     <br></br>
                 </div>
+                </form>
             </Container>
         </>
     );

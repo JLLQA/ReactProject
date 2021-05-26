@@ -31,7 +31,7 @@ const Update = () => {
     return (
         <>
             <Container>
-                <h1>Update BM WIP</h1>
+                <h1 className = "header1">Update BM WIP</h1>
                 <form>
                     <div>
                         <input type="text" class="form-control" id="ID" placeholder="Enter ID: " />
