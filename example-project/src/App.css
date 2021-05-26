@@ -76,3 +76,11 @@ form{
   text-decoration: none;
   text-align: center;
 }
+
+.primary {
+  color: white;
+  background-color: darkblue;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}

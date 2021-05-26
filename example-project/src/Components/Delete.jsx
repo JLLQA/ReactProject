@@ -1,12 +1,12 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { Container } from 'reactstrap';
 
 const Delete = () => {
 
     const [ID, setID] = useState("");
-    const [error, setError] = useState(null)
+    const [setError] = useState(null)
 
     const DeleteBM = (e) => {
 
@@ -38,6 +38,7 @@ const Delete = () => {
                 <form onSubmit={DeleteBM}>
                     <div>
                         <input
+                            className="form-control"
                             id="ID"
                             type="number"
                             name="ID"
@@ -47,11 +48,21 @@ const Delete = () => {
                         />
                     </div>
                     <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
                     <div>
                         <button
                             className="danger"
                             type="submit">
-                            Submit</button>
+                            Delete BM</button>
                     </div>
                 </form>
             </Container>

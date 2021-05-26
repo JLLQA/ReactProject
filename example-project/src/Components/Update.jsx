@@ -31,37 +31,59 @@ const Update = () => {
     return (
         <>
             <Container>
-                <h1 className = "header1">Update BM WIP</h1>
+                <h1 className="header1">Update BM WIP</h1>
                 <form>
                     <div>
-                        <input type="text" class="form-control" id="ID" placeholder="Enter ID: " />
+                        <input
+                            className="form-control"
+                            id="ID"
+                            type="number"
+                            name="ID"
+                            // value={ID}
+                            placeholder="Enter ID:"
+                        // onChange={(e) => setID(e.target.value)}
+                        />
                     </div>
                     <br></br>
                     <div>
-                        <input type="text" class="form-control" id="Name" placeholder="Enter Name: " />
+                        <input type="text" className="form-control" id="Name" placeholder="Enter Name: " />
                     </div>
                     <br></br>
                     <div>
-                        <input list="items" class="form-control" id="firstItem" placeholder="Choose 1st Item" />
+                        <input list="items" className="form-control" id="firstItem" placeholder="Choose 1st Item" />
+                        <datalist id="items">
+                            <option value="Bun"></option>
+                            <option value="Condiment"></option>
+                            <option value="Lettuce"></option>
+                            <option value="Tomato"></option>
+                            <option value="Onion"></option>
+                            <option value="Bacon"></option>
+                            <option value="Cheese"></option>
+                            <option value="Patty"></option>
+                        </datalist>
                     </div>
                     <br></br>
                     <div>
-                        <input list="items" class="form-control" id="secondItem" placeholder="Choose 2nd Item" />
+                        <input list="items" className="form-control" id="secondItem" placeholder="Choose 2nd Item" />
                     </div>
                     <br></br>
                     <div>
-                        <label><b>Are they edible?</b></label>
+                        <label><b>Are they edible? </b></label>
                         <select id="edible" name="edible" size="1">
                             <option value="" defaultValue></option>
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
                         </select>
                     </div>
-                </form>
-                <div className="button">
-                    {/* <button class="success" id="create" onClick={updateBM()}> Update BM</button> */}
                     <br></br>
-                </div>
+                    <div>
+                        <button
+                            className="primary"
+                            type="submit" >
+                            Update BM</button>
+                        <br></br>
+                    </div>
+                </form>
             </Container>
         </>
     );

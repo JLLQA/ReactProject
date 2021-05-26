@@ -9,10 +9,10 @@ import './App.css';
 const App = () => {
   return (
     <div>
-      <div class="navbar">
+      <div className = "navbar">
         <a href="/">Home</a>
       </div>
-      <div className='rowC'>
+      <div className = "rowC">
         <Create />
         <Delete />
         <Update />

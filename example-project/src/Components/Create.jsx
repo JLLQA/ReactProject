@@ -10,14 +10,14 @@ const Create = () => {
     return (
         <>
             <Container>
-                <h1 className = "header1">Create BM WIP</h1>
+                <h1 className="header1">Create BM WIP</h1>
                 <form>
                     <div>
-                        <input type="text" class="form-control" id="Name" placeholder="Enter Name: " />
+                        <input type="text" className="form-control" id="Name" placeholder="Enter Name: " />
                     </div>
                     <br></br>
                     <div>
-                        <input list="items" class="form-control" id="firstItem" placeholder="Choose 1st Item" />
+                        <input list="items" className="form-control" id="firstItem" placeholder="Choose 1st Item" />
                         <datalist id="items">
                             <option value="Bun"></option>
                             <option value="Condiment"></option>
@@ -31,11 +31,11 @@ const Create = () => {
                     </div>
                     <br></br>
                     <div>
-                        <input list="items" class="form-control" id="secondItem" placeholder="Choose 2nd Item" />
+                        <input list="items" className="form-control" id="secondItem" placeholder="Choose 2nd Item" />
                     </div>
                     <br></br>
                     <div>
-                        <label><b>Are they edible?</b></label>
+                        <label><b>Are they edible? </b></label>
                         <select id="edible" name="edible" size="1">
                             <option value="" defaultValue></option>
                             <option value="Yes">Yes</option>
@@ -43,10 +43,16 @@ const Create = () => {
                         </select>
                     </div>
                     <br></br>
-                    <div className="button">
-                    {/* <button class="success" id="create" onClick={createBM()}> Create BM</button> */}
                     <br></br>
-                </div>
+                    <br></br>
+                    <br></br>
+                    <div>
+                        <button
+                            className="success"
+                            type="submit" >
+                            Create BM</button>
+                        <br></br>
+                    </div>
                 </form>
             </Container>
         </>
